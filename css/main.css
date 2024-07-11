@@ -1,0 +1,133 @@
+@charset "utf-8";
+
+header{width: 100%; height: 80px; background-color: transparent; border-bottom: 1px solid transparent; transition: all 0.3s;}
+header .inner{width: calc(100% - 30px); margin: 0 auto; position: relative;}
+header .inner h1{text-align: center; line-height: 80px;}
+header .inner h1 a{color: #fff; display: inline-block; position: relative;}
+header nav{position: absolute; top: 0; left: 0; width: 100%;}
+header .ham{z-index: 999; position: absolute; top: 0; right: 10px;}
+header .ham a {position: absolute; top: 27px; right: 0;}
+header .ham a span{display: block; width: 30px; height: 2px; background-color: #fff; margin: 7px 0;}
+header .ham a::before{content: ""; display: block; width: 30px; height: 2px; background-color: #fff; transition: all ease-in 0.5s;}
+header .ham a::after{content: ""; display: block; width: 30px; height: 2px; background-color: #fff; transition: all ease-in 0.5s;}
+header .mgnb-wrap{text-align: center; font-size: 24px; letter-spacing: 5px; background-color: #fff; height: 100%; width: 100%; position: fixed; top: 0; right: -2000px; z-index: 99;}
+header .mgnb-wrap ul{margin-top: 120px;}
+header .mgnb-wrap ul li{height: 120px;}
+header .mgnb-wrap ul li:hover a{font-weight: bold;}
+.line{width: calc(100% - 50%); height: 2px; background-color: #333; transform: scale(0); margin: 20px auto; transition: all 0.5s;}
+header .mgnb-wrap ul li:hover a + div{transform: scale(1);}
+
+header .ham.on a span{display: none;}
+header .ham.on a::before{transform: rotate(45deg); margin-left: 2px; margin-top: 2px; background-color: #333;}
+header .ham.on a::after{transform: rotate(-45deg); margin-left: 2px; margin-top: -2px; background-color: #333;}
+
+header .gnb-wrap{display: none;}
+
+#main-visual{height: 100vH; width: 100%; position: relative; margin-top: -80px;}
+#main-visual .visual video{height: 100vH; width: 100%; object-fit: cover; } 
+#main-visual .visual p, h3{color: #fff;}
+#main-visual .visual .typing{font-size: 16px; letter-spacing: -1px; position: absolute; top: 40%; left: 50%; transform: translateX(-50%); text-shadow: 1px 1px 1px #777;}
+#main-visual .visual .text{font-size: 48px; letter-spacing: -1px; position: absolute; top: 42%; left: 50%; transform: translate(-50%); text-shadow: 1px 1px 1px #777;}
+
+.typing {height: 55px; justify-content: center; font-size: 16px; color: #fff;}
+.text{font-size: 40px; margin-left: .6rem; color: #fff;}
+.text::after {content: ''; margin-left: .4rem; border-right: 2px solid #777;
+animation: cursor .9s infinite steps(2);}
+@keyframes cursor {from { border-right: 2px solid #222; } to { border-right: 2px solid #777; }}
+
+#about{background-color: #fff; height: 100vh;} 
+#about .inner{width: calc(100% - 40px); margin: 0 auto; position: relative;}
+#about .inner .a-txt{font-size: 24px; letter-spacing: 5px; font-weight: normal; text-align: center; margin-bottom: 80px;}
+#about .inner .a-txt::before{content: ""; display: block; width: 1px; height: 50px; background-color: #333; margin-left: 50%;}
+#about .inner .introduce{display: flex; margin-bottom: 80px;}
+#about .inner .my-img{width: 150px; height: 150px; border-radius: 50%; /*background: url(../img/Untitled-2.png) no-repeat center center / cover;*/ background-color: #fff; border: 1px solid #333; margin-right: 30px;}
+#about .inner .my-txt{font-size: 22px; color: #555; margin-top: 20px;}
+#about .inner .my-txt span{color: #333; font-weight: bold;}
+#about .inner .file{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#about .inner .file li{margin-bottom: 100px; border-left: 1px solid #333; padding-left: 10px; width: 40%;}
+#about .inner .file li h2{font-size: 20px; margin-bottom: 20px;}
+#about .inner .file li p{font-size: 14px; letter-spacing: -1px;}
+#about .inner .icon{display: flex; flex-wrap: wrap;}
+#about .inner .icon li{width: 30px; height: 30px; margin-bottom: 20px; margin-right: 5px; background-repeat: center center; background-repeat: no-repeat; background-size: contain;}
+#about .inner .icon li.ps{background-image: url(../img/ps.png);}
+#about .inner .icon li.ai{background-image: url(../img/ai.png);}
+#about .inner .icon li.pr{background-image: url(../img/pr.png);}
+#about .inner .icon li.ae{background-image: url(../img/ae.png);}
+#about .inner .icon li.html{background-image: url(../img/html.png);}
+#about .inner .icon li.css{background-image: url(../img/css.png);}
+#about .inner .icon li.jq{background-image: url(../img/jq.png);}
+#about .inner .icon li.js{background-image: url(../img/jvs.png);}
+
+#port{height: 100vh; background-color: beige;}
+
+
+/*mobile*/
+
+@media screen and (min-width : 768px) {
+
+header{position: fixed; background-color: transparent; border-bottom: 1px solid transparent; z-index: 999;}
+header .inner{width: calc(100% - 50px); margin: 0 auto; position: relative;}
+header .inner h1{text-align: left;}
+header .inner h1 a{color: #fff;}
+
+header.scroll{background-color: #fff; -webkit-box-shadow: 1px 1px 5px 1px #999999; box-shadow: 1px 1px 5px 1px #999999;}
+header.scroll .inner h1 a{color: #333;}
+header.scroll .gnb-wrap .gnb li a{color: #333;}
+header.scroll .line{width: 100%; height: 2px; background-color: #333; transform: scale(0); margin: 20px auto; transition: all 0.5s;}
+
+header .mgnb-wrap{display: none;}
+header .ham{display: none;}
+header .gnb-wrap{display: block; position: absolute; top: 30px; right: 30px;}
+header .gnb-wrap .gnb{display: flex; text-align: center; }
+header .gnb-wrap .gnb li{width: 20%; height: 100%; margin-right: 30px;}
+header .gnb-wrap .gnb li:last-child{margin-right: 0;}
+header .gnb-wrap .gnb li a{text-align: center; display: inline-block; color: #fff;}
+header .gnb-wrap .gnb li:hover a{font-weight: bold;}
+.line{width: 100%; height: 2px; background-color: #fff; transform: scale(0); margin: 20px auto; transition: all 0.5s;}
+header .gnb-wrap .gnb li:hover a + div{transform: scale(1);}
+
+#main-visual{margin-top: 0;}
+
+#about .inner{width: calc(100% - 60px); margin: 0 auto; position: relative;}
+#about .inner .a-txt{font-size: 24px; letter-spacing: 5px; font-weight: normal; text-align: center; margin-bottom: 80px;}
+#about .inner .a-txt::before{content: ""; display: block; width: 1px; height: 70px; background-color: #333; margin-left: 50%; padding-top: 20px;}
+#about .inner .introduce{display: flex; margin-bottom: 80px;}
+#about .inner .my-img{width: 250px; height: 250px; border-radius: 50%; /*background: url(../img/Untitled-2.png) no-repeat center center / cover;*/ background-color: #fff; border: 1px solid #333; margin-right: 120px;}
+#about .inner .my-txt{font-size: 36px; color: #555; margin-top: 20px;}
+#about .inner .my-txt span{color: #333; font-weight: bold;}
+#about .inner .file{display: flex; flex-wrap: wrap; justify-content: space-between;}
+#about .inner .file li{margin-bottom: 100px; border-left: 1px solid #333; padding-left: 20px; width: 40%;}
+#about .inner .file li h2{font-size: 32px; margin-bottom: 20px; letter-spacing: -1px;}
+#about .inner .file li p{font-size: 16px; letter-spacing: -1px;}
+
+
+
+}
+
+/*tablet*/
+
+@media screen and (min-width : 1024px) {
+
+  header .inner h1{padding-left: 20px;}
+
+  header .gnb-wrap .gnb li{width: 20%; height: 100%; margin-right: 50px;}
+  header .gnb-wrap .gnb li a{text-align: center; display: inline-block; color: #fff; font-size: 20px;}
+
+
+ #about{height: 75vh;}
+ #about .inner{width: calc(100% - 500px); margin: 0 auto; position: relative;}
+ #about .inner .a-box{display: flex; justify-content: space-between;}
+ #about .inner .a-txt{font-size: 24px; letter-spacing: 5px; font-weight: normal; text-align: center; margin-bottom: 80px;}
+ #about .inner .a-txt::before{content: ""; display: block; width: 1px; height: 70px; background-color: #333; margin-left: 50%; padding-top: 20px;}
+ #about .inner .introduce{display: block; margin-bottom: 80px;}
+ #about .inner .my-img{width: 200px; height: 200px; border-radius: 50%; /*background: url(../img/Untitled-2.png) no-repeat center center / cover;*/ background-color: #fff; border: 1px solid #333; margin-right: 250px; margin-left: 50px;}
+ #about .inner .my-txt{font-size: 32px; color: #555; margin-top: 50px; margin-left: 20px; letter-spacing: -1px;}
+ #about .inner .my-txt span{color: #333; font-weight: bold;}
+ #about .inner .file{display: flex; flex-wrap: wrap; justify-content: space-between;}
+ #about .inner .file li{margin-bottom: 100px; border-left: 1px solid #333; padding-left: 20px; width: 40%;}
+ #about .inner .file li h2{font-size: 32px; margin-bottom: 20px; letter-spacing: -1px;}
+ #about .inner .file li p{font-size: 16px; letter-spacing: -1px;}
+
+}
+
+/*Desktop*/
