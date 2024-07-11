@@ -78,4 +78,80 @@ $(window).scroll(function(){
 
   AOS.init();
 
-})//end
+  //가로스크롤
+
+     // 가로 스크롤 애니
+     const horizontal = document.querySelector(".horizontal"); 
+        const sections = gsap.utils.toArray(".horizontal > section");
+
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length -1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: horizontal,
+                start: "top top",
+                end: () => "+=" + (horizontal.offsetWidth - innerWidth),
+                pin: true,
+                scrub: 1,
+                snap: {
+                    snapTo: 1/(sections.length -1),
+                    inertia: false,
+                    duration: {min: 0.1, max: 0.1},
+                },
+                invalidateOnRefresh: true,
+                anticipatePin: 1
+            }
+        });
+
+
+    });
+
+    //이거뭐지
+
+    $("header h1 a").click(function(){
+      $("html, body").stop().animate({scrollTop:0},1000,"swing")
+    });
+
+    // 마우스 휠 방향
+    $(window).bind('wheel', function(event){
+      if (event.originalEvent.wheelDelta > 0 || event.originalEvent.detail < 0) {
+          // scroll up
+          $("header").removeClass("on");
+      }
+      else {
+          // scroll down
+          $("header").addClass("on");
+      }
+
+      var location = $(window).scrollTop();
+      
+      if(location < 100 ){
+        $("header").addClass("on");
+      }
+    });
+
+    //뭐지이거
+
+    var menu = $(".gnb li")
+
+    menu.click(function(){
+        event.preventDefault();
+        var idx = $(this).index();
+        var Link = $(this).find("a").attr("href");
+        var tt = $(Link).offset().top
+        $("html, body").stop()
+        .animate({scrollTop:tt},1000,"swing",function(){
+            quick(idx);
+        })
+    });
+
+    function quick(n){
+    $(".gnb li").removeClass("on");
+    $(".gnb li").eq(n).addClass("on");
+    }
+
+
+  
+
+
+//end
