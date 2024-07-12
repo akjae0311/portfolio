@@ -7,12 +7,12 @@ header .inner{width: calc(100% - 30px); margin: 0 auto; position: relative;}
 header .inner h1{text-align: center; line-height: 80px;}
 header .inner h1 a{color: #fff; display: inline-block; position: relative;}
 header nav{position: absolute; top: 0; left: 0; width: 100%;}
-header .ham{z-index: 999; position: absolute; top: 0; right: 10px;}
+header .ham{position: fixed; top: 0; right: 10px;z-index: 9999999999;}
 header .ham a {position: absolute; top: 27px; right: 0;}
 header .ham a span{display: block; width: 30px; height: 2px; background-color: #fff; margin: 7px 0;}
 header .ham a::before{content: ""; display: block; width: 30px; height: 2px; background-color: #fff; transition: all ease-in 0.5s;}
 header .ham a::after{content: ""; display: block; width: 30px; height: 2px; background-color: #fff; transition: all ease-in 0.5s;}
-header .mgnb-wrap{text-align: center; font-size: 24px; letter-spacing: 5px; background-color: #fff; height: 100%; width: 100%; position: fixed; top: 0; right: -2000px; z-index: 99;}
+header .mgnb-wrap{text-align: center; font-size: 24px; letter-spacing: 5px; background-color: #fff; height: 100%; width: 100%; position: fixed; top: 0; right: -2000px; z-index: 99999;}
 header .mgnb-wrap ul{margin-top: 120px;}
 header .mgnb-wrap ul li{height: 120px;}
 header .mgnb-wrap ul li:hover a{font-weight: bold;}

@@ -6,7 +6,7 @@ $(document).ready(function(){ //start
   if($(this).hasClass("on") == true){
     $(this).removeClass("on");
     $(".mgnb-wrap").animate({
-      right : "-2000PX"
+      right : "-2000px"
     }, 500);
   }else{
     $(this).addClass("on");
@@ -104,9 +104,8 @@ $(window).scroll(function(){
         });
 
 
-    });
+    
 
-    //이거뭐지
 
     $("header h1 a").click(function(){
       $("html, body").stop().animate({scrollTop:0},1000,"swing")
@@ -130,7 +129,6 @@ $(window).scroll(function(){
       }
     });
 
-    //뭐지이거
 
     var menu = $(".gnb li")
 
@@ -151,7 +149,15 @@ $(window).scroll(function(){
     }
 
 
-  
+    $(".mgnb-wrap .mgnb li a").click(function(){
+      $(".ham").removeClass("on");
+      $(".mgnb-wrap").animate({
+        right : "-2000px"
+      }, 500);
+    });
+    
+
+  });
 
 
 //end
