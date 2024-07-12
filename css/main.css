@@ -122,7 +122,7 @@ animation: cursor .9s infinite steps(2);}
 
 .horizontal .port4 .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/컨셉페이지.png) center top / cover; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
 
-.contact{width: 100%; height: 100vh; background-color: #222; z-index: 99; position: relative; padding: 50px;  text-align: center; color: #FFF;}
+.contact{width: 100%; height: 90vh; background-color: #222; z-index: 99; position: relative; padding: 50px;  text-align: center; color: #FFF;}
 .contact .c-txt{font-size: 24px; letter-spacing: 5px; font-weight: normal; text-align: center; color: #555; margin-bottom: 80px;}
 .contact .c-txt::before{content: ""; display: block; height: 50px; width: 1px; background-color: #333; margin-top: -50px; margin-left: 50%;}
 .contact .c1{margin-top: 150px; font-size: 20px;  margin-bottom: 200px;}
@@ -132,7 +132,8 @@ animation: cursor .9s infinite steps(2);}
 .contact > .typing {height: 55px; justify-content: center; font-size: 16px;}
 .contact > .typing .text{font-size: 40px; margin-left: .6rem; }
 
-
+footer{width: 100%; height: 10vh; background-color: #222; border-top: 1px solid #ddd; padding: 40px; text-align: center;}
+footer p{color: #ddd; font-size: 12px; font-style: italic; font-weight: normal;}
 
 
  
@@ -213,10 +214,13 @@ header .gnb-wrap .gnb li:hover a + div{transform: scale(1);}
 
 .horizontal .port4 .w-site1 .st1{background-image: url(../img/컨셉페이지.png);}
 
-.contact{width: 100%; height: 70vh;}
+.contact{width: 100%; height: 75vh;}
 .contact .c1{margin-top: 150px; font-size: 20px;  margin-bottom: 200px; letter-spacing: 7px;}
 .contact .c1 span{color: #FFF; font-weight: bold; letter-spacing: 7px;}
 }
+
+footer{width: 100%; height: 20vh; background-color: #222; border-top: 1px solid #ddd; padding: 40px; text-align: center; position: relative;}
+footer p{color: #ddd; font-size: 12px; font-style: italic; font-weight: normal; position: absolute; bottom: 50%; left: 50%; transform: translate(-50%, -50%);}
 
 /*tablet*/
 
