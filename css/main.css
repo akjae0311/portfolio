@@ -78,12 +78,12 @@ animation: cursor .9s infinite steps(2);}
 .horizontal .prt .intro .des:hover a{background-color: #333; color: #fff;}
 
 
-.horizontal .prt .w-site1{width: 400px; height: 280px; background: url(../img/Asset\ 4.png) no-repeat center center / contain; position: absolute; top: 150px; left: 20px; margin-top: 220px;}
-.horizontal .prt .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/screencapture-akjae0311-github-io-fritzhansen-2024-07-11-14_08_39.png) center top / 100% auto; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
+.horizontal .prt .w-site1{width: 400px; height: 280px; background: url(../img/Asset4.png) no-repeat center center / contain; position: absolute; top: 150px; left: 20px; margin-top: 220px;}
+.horizontal .prt .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/fr_screen.png) center top / 100% auto; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
 
 .horizontal .prt .w-site1:hover .st1{background-position: 100%;}
 
-.horizontal .prt .p-site1{width: 100px; height: 180px; background: url(../img/Asset\ 7.png) no-repeat center center / contain; position: absolute; top: 530px; right: 20px;}
+.horizontal .prt .p-site1{width: 100px; height: 180px; background: url(../img/Asset7.png) no-repeat center center / contain; position: absolute; top: 530px; right: 20px;}
 
 .horizontal .prt .p-site1 .st2{position: absolute; right: 10px; top: 5px;  background: url(../img/ph-screen.png) center top / cover; overflow: hidden; width: 80px; height: 170px; border-radius: 4%; transition: all 3s;}
 
@@ -120,7 +120,7 @@ animation: cursor .9s infinite steps(2);}
 .horizontal .port3 .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/and.png) center top / cover; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
 .horizontal .port3 .p-site1 .st2{position: absolute; right: 10px; top: 5px;  background: url(../img/and-p.png) center top / cover; overflow: hidden; width: 80px; height: 170px; border-radius: 4%; transition: all 3s;}
 
-.horizontal .port4 .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/컨셉페이지.png) center top / cover; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
+.horizontal .port4 .w-site1 .st1{position: absolute; left: 15px; top: 20px;  background: url(../img/conceptpage.png) center top / cover; overflow: hidden; width: 370px; height: 180px; transition: all 3s;}
 
 .contact{width: 100%; height: 90vh; background-color: #222; z-index: 99; position: relative; padding: 50px;  text-align: center; color: #FFF;}
 .contact .c-txt{font-size: 24px; letter-spacing: 5px; font-weight: normal; text-align: center; color: #555; margin-bottom: 80px;}
@@ -197,10 +197,10 @@ header .gnb-wrap .gnb li:hover a + div{transform: scale(1);}
 .horizontal .prt .p-txt{position: absolute; bottom: 30px; left: 70%; font-size: 20px; font-weight: normal; letter-spacing: 5px; text-align: center;}
 
 
-.horizontal .prt .w-site1{width: 600px; height: 480px; background: url(../img/Asset\ 4.png) no-repeat center center / contain; position: absolute; top: 285px; left: 100px; margin-top: 220px;}
-.horizontal .prt .w-site1 .st1{position: absolute; left: 15px; top: 50px;  background: url(../img/screencapture-akjae0311-github-io-fritzhansen-2024-07-11-14_08_39.png) center top / cover; overflow: hidden; width: 570px; height: 280px; transition: all 3s;}
+.horizontal .prt .w-site1{width: 600px; height: 480px; background: url(../img/Asset4.png) no-repeat center center / contain; position: absolute; top: 285px; left: 100px; margin-top: 220px;}
+.horizontal .prt .w-site1 .st1{position: absolute; left: 15px; top: 50px;  background: url(../img/fr_screen.png) center top / cover; overflow: hidden; width: 570px; height: 280px; transition: all 3s;}
 
-.horizontal .prt .p-site1{width: 150px; height: 230px; background: url(../img/Asset\ 7.png) no-repeat center center / contain; position: absolute; top: 750px; right: 20px;}
+.horizontal .prt .p-site1{width: 150px; height: 230px; background: url(../img/Asset7.png) no-repeat center center / contain; position: absolute; top: 750px; right: 20px;}
 
 .horizontal .prt .p-site1 .st2{position: absolute; right: 20px; top: 10px;  background: url(../img/ph-screen.png) center top / cover; overflow: hidden; width: 110px; height: 210px; border-radius: 4%; transition: all 3s;}
 
@@ -212,7 +212,7 @@ header .gnb-wrap .gnb li:hover a + div{transform: scale(1);}
 .horizontal .port3 .w-site1 .st1{background-image: url(../img/and.png);}
 .horizontal .port3 .p-site1 .st2{background-image: url(../img/and-p.png);}
 
-.horizontal .port4 .w-site1 .st1{background-image: url(../img/컨셉페이지.png);}
+.horizontal .port4 .w-site1 .st1{background-image: url(../img/conceptpage.png);}
 
 .contact{width: 100%; height: 75vh;}
 .contact .c1{margin-top: 150px; font-size: 20px;  margin-bottom: 200px; letter-spacing: 7px;}
@@ -258,8 +258,8 @@ footer p{color: #ddd; font-size: 12px; font-style: italic; font-weight: normal; 
   border-right: 250px solid transparent;
 }
 
-.horizontal .prt .w-site1{width: 600px; height: 480px; background: url(../img/Asset\ 4.png) no-repeat center center / contain; position: absolute; top: 50px; left: 50%; margin-top: 220px;}
-.horizontal .prt .p-site1{width: 150px; height: 230px; background: url(../img/Asset\ 7.png) no-repeat center center / contain; position: absolute; top: 500px; right: 60px;}
+.horizontal .prt .w-site1{width: 600px; height: 480px; background: url(../img/Asset4.png) no-repeat center center / contain; position: absolute; top: 50px; left: 50%; margin-top: 220px;}
+.horizontal .prt .p-site1{width: 150px; height: 230px; background: url(../img/Asset7.png) no-repeat center center / contain; position: absolute; top: 500px; right: 60px;}
 
 .horizontal .prt .intro .web a{display: block; width: 120px; height: 40px; border: 1px solid #333; text-align: center; line-height: 40px; font-size: 24px; position: static; transition: all 0.3s; margin-top: 20px;}
 .horizontal .prt .intro .web:hover a{background-color: #333; color: #fff;}
